@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E038E4082DCCC39D00863CF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038E4072DCCC39D00863CF4 /* AppDelegate.swift */; };
+		E038E40A2DCCC39D00863CF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038E4092DCCC39D00863CF4 /* SceneDelegate.swift */; };
+		E038E40C2DCCC39D00863CF4 /* MyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038E40B2DCCC39D00863CF4 /* MyCollectionViewController.swift */; };
+		E038E4122DCCC39D00863CF4 /* ios_swift_collectionview_networking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E038E4102DCCC39D00863CF4 /* ios_swift_collectionview_networking.xcdatamodeld */; };
+		E038E4142DCCC39E00863CF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E038E4132DCCC39E00863CF4 /* Assets.xcassets */; };
+		E038E4172DCCC39E00863CF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E038E4152DCCC39E00863CF4 /* LaunchScreen.storyboard */; };
+		E038E4222DCCC39E00863CF4 /* ios_swift_collectionview_networkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038E4212DCCC39E00863CF4 /* ios_swift_collectionview_networkingTests.swift */; };
+		E038E42C2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038E42B2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITests.swift */; };
+		E038E42E2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038E42D2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E038E41E2DCCC39E00863CF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E038E3FC2DCCC39D00863CF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E038E4032DCCC39D00863CF4;
+			remoteInfo = "ios-swift-collectionview-networking";
+		};
+		E038E4282DCCC39E00863CF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E038E3FC2DCCC39D00863CF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E038E4032DCCC39D00863CF4;
+			remoteInfo = "ios-swift-collectionview-networking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E038E4042DCCC39D00863CF4 /* ios-swift-collectionview-networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-swift-collectionview-networking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E038E4072DCCC39D00863CF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E038E4092DCCC39D00863CF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E038E40B2DCCC39D00863CF4 /* MyCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewController.swift; sourceTree = "<group>"; };
+		E038E4112DCCC39D00863CF4 /* ios_swift_collectionview_networking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios_swift_collectionview_networking.xcdatamodel; sourceTree = "<group>"; };
+		E038E4132DCCC39E00863CF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E038E4162DCCC39E00863CF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E038E4182DCCC39E00863CF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E038E41D2DCCC39E00863CF4 /* ios-swift-collectionview-networkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-swift-collectionview-networkingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E038E4212DCCC39E00863CF4 /* ios_swift_collectionview_networkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swift_collectionview_networkingTests.swift; sourceTree = "<group>"; };
+		E038E4272DCCC39E00863CF4 /* ios-swift-collectionview-networkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-swift-collectionview-networkingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E038E42B2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swift_collectionview_networkingUITests.swift; sourceTree = "<group>"; };
+		E038E42D2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swift_collectionview_networkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E038E4012DCCC39D00863CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E038E41A2DCCC39E00863CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E038E4242DCCC39E00863CF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E038E3FB2DCCC39D00863CF4 = {
+			isa = PBXGroup;
+			children = (
+				E038E4062DCCC39D00863CF4 /* ios-swift-collectionview-networking */,
+				E038E4202DCCC39E00863CF4 /* ios-swift-collectionview-networkingTests */,
+				E038E42A2DCCC39E00863CF4 /* ios-swift-collectionview-networkingUITests */,
+				E038E4052DCCC39D00863CF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E038E4052DCCC39D00863CF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E038E4042DCCC39D00863CF4 /* ios-swift-collectionview-networking.app */,
+				E038E41D2DCCC39E00863CF4 /* ios-swift-collectionview-networkingTests.xctest */,
+				E038E4272DCCC39E00863CF4 /* ios-swift-collectionview-networkingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E038E4062DCCC39D00863CF4 /* ios-swift-collectionview-networking */ = {
+			isa = PBXGroup;
+			children = (
+				E038E4072DCCC39D00863CF4 /* AppDelegate.swift */,
+				E038E4092DCCC39D00863CF4 /* SceneDelegate.swift */,
+				E038E40B2DCCC39D00863CF4 /* MyCollectionViewController.swift */,
+				E038E4132DCCC39E00863CF4 /* Assets.xcassets */,
+				E038E4152DCCC39E00863CF4 /* LaunchScreen.storyboard */,
+				E038E4182DCCC39E00863CF4 /* Info.plist */,
+				E038E4102DCCC39D00863CF4 /* ios_swift_collectionview_networking.xcdatamodeld */,
+			);
+			path = "ios-swift-collectionview-networking";
+			sourceTree = "<group>";
+		};
+		E038E4202DCCC39E00863CF4 /* ios-swift-collectionview-networkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				E038E4212DCCC39E00863CF4 /* ios_swift_collectionview_networkingTests.swift */,
+			);
+			path = "ios-swift-collectionview-networkingTests";
+			sourceTree = "<group>";
+		};
+		E038E42A2DCCC39E00863CF4 /* ios-swift-collectionview-networkingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E038E42B2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITests.swift */,
+				E038E42D2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITestsLaunchTests.swift */,
+			);
+			path = "ios-swift-collectionview-networkingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E038E4032DCCC39D00863CF4 /* ios-swift-collectionview-networking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E038E4312DCCC39E00863CF4 /* Build configuration list for PBXNativeTarget "ios-swift-collectionview-networking" */;
+			buildPhases = (
+				E038E4002DCCC39D00863CF4 /* Sources */,
+				E038E4012DCCC39D00863CF4 /* Frameworks */,
+				E038E4022DCCC39D00863CF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-swift-collectionview-networking";
+			productName = "ios-swift-collectionview-networking";
+			productReference = E038E4042DCCC39D00863CF4 /* ios-swift-collectionview-networking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E038E41C2DCCC39E00863CF4 /* ios-swift-collectionview-networkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E038E4342DCCC39E00863CF4 /* Build configuration list for PBXNativeTarget "ios-swift-collectionview-networkingTests" */;
+			buildPhases = (
+				E038E4192DCCC39E00863CF4 /* Sources */,
+				E038E41A2DCCC39E00863CF4 /* Frameworks */,
+				E038E41B2DCCC39E00863CF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E038E41F2DCCC39E00863CF4 /* PBXTargetDependency */,
+			);
+			name = "ios-swift-collectionview-networkingTests";
+			productName = "ios-swift-collectionview-networkingTests";
+			productReference = E038E41D2DCCC39E00863CF4 /* ios-swift-collectionview-networkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E038E4262DCCC39E00863CF4 /* ios-swift-collectionview-networkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E038E4372DCCC39E00863CF4 /* Build configuration list for PBXNativeTarget "ios-swift-collectionview-networkingUITests" */;
+			buildPhases = (
+				E038E4232DCCC39E00863CF4 /* Sources */,
+				E038E4242DCCC39E00863CF4 /* Frameworks */,
+				E038E4252DCCC39E00863CF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E038E4292DCCC39E00863CF4 /* PBXTargetDependency */,
+			);
+			name = "ios-swift-collectionview-networkingUITests";
+			productName = "ios-swift-collectionview-networkingUITests";
+			productReference = E038E4272DCCC39E00863CF4 /* ios-swift-collectionview-networkingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E038E3FC2DCCC39D00863CF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E038E4032DCCC39D00863CF4 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					E038E41C2DCCC39E00863CF4 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = E038E4032DCCC39D00863CF4;
+					};
+					E038E4262DCCC39E00863CF4 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = E038E4032DCCC39D00863CF4;
+					};
+				};
+			};
+			buildConfigurationList = E038E3FF2DCCC39D00863CF4 /* Build configuration list for PBXProject "ios-swift-collectionview-networking" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E038E3FB2DCCC39D00863CF4;
+			productRefGroup = E038E4052DCCC39D00863CF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E038E4032DCCC39D00863CF4 /* ios-swift-collectionview-networking */,
+				E038E41C2DCCC39E00863CF4 /* ios-swift-collectionview-networkingTests */,
+				E038E4262DCCC39E00863CF4 /* ios-swift-collectionview-networkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E038E4022DCCC39D00863CF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E038E4172DCCC39E00863CF4 /* LaunchScreen.storyboard in Resources */,
+				E038E4142DCCC39E00863CF4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E038E41B2DCCC39E00863CF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E038E4252DCCC39E00863CF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E038E4002DCCC39D00863CF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E038E4122DCCC39D00863CF4 /* ios_swift_collectionview_networking.xcdatamodeld in Sources */,
+				E038E40C2DCCC39D00863CF4 /* MyCollectionViewController.swift in Sources */,
+				E038E4082DCCC39D00863CF4 /* AppDelegate.swift in Sources */,
+				E038E40A2DCCC39D00863CF4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E038E4192DCCC39E00863CF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E038E4222DCCC39E00863CF4 /* ios_swift_collectionview_networkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E038E4232DCCC39E00863CF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E038E42C2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITests.swift in Sources */,
+				E038E42E2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E038E41F2DCCC39E00863CF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E038E4032DCCC39D00863CF4 /* ios-swift-collectionview-networking */;
+			targetProxy = E038E41E2DCCC39E00863CF4 /* PBXContainerItemProxy */;
+		};
+		E038E4292DCCC39E00863CF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E038E4032DCCC39D00863CF4 /* ios-swift-collectionview-networking */;
+			targetProxy = E038E4282DCCC39E00863CF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E038E4152DCCC39E00863CF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E038E4162DCCC39E00863CF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E038E42F2DCCC39E00863CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E038E4302DCCC39E00863CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E038E4322DCCC39E00863CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 57DFZB95LM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ios-swift-collectionview-networking/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "otaviob.ios-swift-collectionview-networking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E038E4332DCCC39E00863CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 57DFZB95LM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ios-swift-collectionview-networking/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "otaviob.ios-swift-collectionview-networking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E038E4352DCCC39E00863CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 57DFZB95LM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "otaviob.ios-swift-collectionview-networkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-swift-collectionview-networking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ios-swift-collectionview-networking";
+			};
+			name = Debug;
+		};
+		E038E4362DCCC39E00863CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 57DFZB95LM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "otaviob.ios-swift-collectionview-networkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-swift-collectionview-networking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ios-swift-collectionview-networking";
+			};
+			name = Release;
+		};
+		E038E4382DCCC39E00863CF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 57DFZB95LM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "otaviob.ios-swift-collectionview-networkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ios-swift-collectionview-networking";
+			};
+			name = Debug;
+		};
+		E038E4392DCCC39E00863CF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 57DFZB95LM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "otaviob.ios-swift-collectionview-networkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ios-swift-collectionview-networking";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E038E3FF2DCCC39D00863CF4 /* Build configuration list for PBXProject "ios-swift-collectionview-networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E038E42F2DCCC39E00863CF4 /* Debug */,
+				E038E4302DCCC39E00863CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E038E4312DCCC39E00863CF4 /* Build configuration list for PBXNativeTarget "ios-swift-collectionview-networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E038E4322DCCC39E00863CF4 /* Debug */,
+				E038E4332DCCC39E00863CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E038E4342DCCC39E00863CF4 /* Build configuration list for PBXNativeTarget "ios-swift-collectionview-networkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E038E4352DCCC39E00863CF4 /* Debug */,
+				E038E4362DCCC39E00863CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E038E4372DCCC39E00863CF4 /* Build configuration list for PBXNativeTarget "ios-swift-collectionview-networkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E038E4382DCCC39E00863CF4 /* Debug */,
+				E038E4392DCCC39E00863CF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E038E4102DCCC39D00863CF4 /* ios_swift_collectionview_networking.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E038E4112DCCC39D00863CF4 /* ios_swift_collectionview_networking.xcdatamodel */,
+			);
+			currentVersion = E038E4112DCCC39D00863CF4 /* ios_swift_collectionview_networking.xcdatamodel */;
+			path = ios_swift_collectionview_networking.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E038E3FC2DCCC39D00863CF4 /* Project object */;
+}
