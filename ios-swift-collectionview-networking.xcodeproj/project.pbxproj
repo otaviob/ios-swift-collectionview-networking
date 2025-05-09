@@ -16,7 +16,7 @@
 		E038E4222DCCC39E00863CF4 /* ios_swift_collectionview_networkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038E4212DCCC39E00863CF4 /* ios_swift_collectionview_networkingTests.swift */; };
 		E038E42C2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038E42B2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITests.swift */; };
 		E038E42E2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038E42D2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITestsLaunchTests.swift */; };
-		E0CC35DD2DCCEE440063BFCE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CC35DC2DCCEE440063BFCE /* Extensions.swift */; };
+		E0CC35DD2DCCEE440063BFCE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CC35DC2DCCEE440063BFCE /* UIColor.swift */; };
 		E0CC35E12DCCF3CC0063BFCE /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CC35E02DCCF3CC0063BFCE /* MyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,7 @@
 		E038E4272DCCC39E00863CF4 /* ios-swift-collectionview-networkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-swift-collectionview-networkingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E038E42B2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swift_collectionview_networkingUITests.swift; sourceTree = "<group>"; };
 		E038E42D2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swift_collectionview_networkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E0CC35DC2DCCEE440063BFCE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E0CC35DC2DCCEE440063BFCE /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		E0CC35E02DCCF3CC0063BFCE /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,11 +107,8 @@
 				E0CC35D82DCCD9D20063BFCE /* View */,
 				E0CC35D92DCCD9E70063BFCE /* Controller */,
 				E0CC35DA2DCCD9F40063BFCE /* Service */,
-				E0CC35DB2DCCDA010063BFCE /* Utilis */,
-				E038E4072DCCC39D00863CF4 /* AppDelegate.swift */,
-				E038E4092DCCC39D00863CF4 /* SceneDelegate.swift */,
-				E038E4132DCCC39E00863CF4 /* Assets.xcassets */,
-				E038E4152DCCC39E00863CF4 /* LaunchScreen.storyboard */,
+				E0B17DD02DCE2C2400AA5652 /* Extensions */,
+				E0CC35DB2DCCDA010063BFCE /* Support Files */,
 				E038E4182DCCC39E00863CF4 /* Info.plist */,
 				E038E4102DCCC39D00863CF4 /* ios_swift_collectionview_networking.xcdatamodeld */,
 			);
@@ -133,6 +130,14 @@
 				E038E42D2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITestsLaunchTests.swift */,
 			);
 			path = "ios-swift-collectionview-networkingUITests";
+			sourceTree = "<group>";
+		};
+		E0B17DD02DCE2C2400AA5652 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E0CC35DC2DCCEE440063BFCE /* UIColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E0CC35D72DCCD9C40063BFCE /* Model */ = {
@@ -165,12 +170,15 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		E0CC35DB2DCCDA010063BFCE /* Utilis */ = {
+		E0CC35DB2DCCDA010063BFCE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E0CC35DC2DCCEE440063BFCE /* Extensions.swift */,
+				E038E4072DCCC39D00863CF4 /* AppDelegate.swift */,
+				E038E4092DCCC39D00863CF4 /* SceneDelegate.swift */,
+				E038E4132DCCC39E00863CF4 /* Assets.xcassets */,
+				E038E4152DCCC39E00863CF4 /* LaunchScreen.storyboard */,
 			);
-			path = Utilis;
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,7 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0CC35DD2DCCEE440063BFCE /* Extensions.swift in Sources */,
+				E0CC35DD2DCCEE440063BFCE /* UIColor.swift in Sources */,
 				E038E4122DCCC39D00863CF4 /* ios_swift_collectionview_networking.xcdatamodeld in Sources */,
 				E0CC35E12DCCF3CC0063BFCE /* MyCollectionViewCell.swift in Sources */,
 				E038E40C2DCCC39D00863CF4 /* MyCollectionViewController.swift in Sources */,
