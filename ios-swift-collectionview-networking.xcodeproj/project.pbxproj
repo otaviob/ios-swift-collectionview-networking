@@ -18,6 +18,8 @@
 		E038E42E2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038E42D2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITestsLaunchTests.swift */; };
 		E0CC35DD2DCCEE440063BFCE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CC35DC2DCCEE440063BFCE /* UIColor.swift */; };
 		E0CC35E12DCCF3CC0063BFCE /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CC35E02DCCF3CC0063BFCE /* MyCollectionViewCell.swift */; };
+		E0ECD5662DD2157100E90F54 /* FileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ECD5652DD2157100E90F54 /* FileModel.swift */; };
+		E0ECD5682DD21C7A00E90F54 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ECD5672DD21C7A00E90F54 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		E038E42D2DCCC39E00863CF4 /* ios_swift_collectionview_networkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_swift_collectionview_networkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E0CC35DC2DCCEE440063BFCE /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		E0CC35E02DCCF3CC0063BFCE /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		E0ECD5652DD2157100E90F54 /* FileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileModel.swift; sourceTree = "<group>"; };
+		E0ECD5672DD21C7A00E90F54 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +110,7 @@
 				E0CC35D72DCCD9C40063BFCE /* Model */,
 				E0CC35D82DCCD9D20063BFCE /* View */,
 				E0CC35D92DCCD9E70063BFCE /* Controller */,
-				E0CC35DA2DCCD9F40063BFCE /* Service */,
+				E0CC35DA2DCCD9F40063BFCE /* Network */,
 				E0B17DD02DCE2C2400AA5652 /* Extensions */,
 				E0CC35DB2DCCDA010063BFCE /* Support Files */,
 				E038E4182DCCC39E00863CF4 /* Info.plist */,
@@ -143,6 +147,7 @@
 		E0CC35D72DCCD9C40063BFCE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E0ECD5652DD2157100E90F54 /* FileModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,11 +168,12 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E0CC35DA2DCCD9F40063BFCE /* Service */ = {
+		E0CC35DA2DCCD9F40063BFCE /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				E0ECD5672DD21C7A00E90F54 /* Service.swift */,
 			);
-			path = Service;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		E0CC35DB2DCCDA010063BFCE /* Support Files */ = {
@@ -312,7 +318,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0CC35DD2DCCEE440063BFCE /* UIColor.swift in Sources */,
+				E0ECD5682DD21C7A00E90F54 /* Service.swift in Sources */,
 				E038E4122DCCC39D00863CF4 /* ios_swift_collectionview_networking.xcdatamodeld in Sources */,
+				E0ECD5662DD2157100E90F54 /* FileModel.swift in Sources */,
 				E0CC35E12DCCF3CC0063BFCE /* MyCollectionViewCell.swift in Sources */,
 				E038E40C2DCCC39D00863CF4 /* MyCollectionViewController.swift in Sources */,
 				E038E4082DCCC39D00863CF4 /* AppDelegate.swift in Sources */,

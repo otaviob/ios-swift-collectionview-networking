@@ -10,10 +10,36 @@ import UIKit
 private let reuseIdentifier = "MyCollectionCell"
 
 class MyCollectionViewController: UICollectionViewController {
+    
+    // MARK: - Properties
+    
+    
+    // MARK: - Init
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupView()
+        fetchCollection()
+       
+    }
+    
+    // MARK: - Selectors
+    
+    // [Action] - Tap Search
+    @objc func searchTapped() {
+        print("Works")
+    }
+    
+    // MARK: - API
+    
+    func fetchCollection() {
+        Service.shared.fetchCollection()
+    }
+    
+    
+    // MARK: - Helper Functions
+    
+    private func setupView() {
         title = "My Collection"
 
         // [Style] - Navigation bar
@@ -30,20 +56,13 @@ class MyCollectionViewController: UICollectionViewController {
 
         // [Button] - Search
         navigationItem.rightBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .search,
-            target: self,
-            action: #selector(searchTapped)
+                barButtonSystemItem: .search,
+                target: self,
+                action: #selector(searchTapped)
         )
         
         collectionView.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
-    
-    // [Action] - Tap Search
-    @objc func searchTapped() {
-        print("Works")
-    }
-
-
 }
 
 extension MyCollectionViewController {
@@ -57,6 +76,8 @@ extension MyCollectionViewController {
         return cell
     }
 }
+
+
 
 extension MyCollectionViewController: UICollectionViewDelegateFlowLayout {
     
