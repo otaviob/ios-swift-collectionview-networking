@@ -14,8 +14,6 @@ class Service {
     
     func fetchCollection() {
         
-        
-        
         guard let url = URL(string: BASE_URL) else { return }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -30,7 +28,13 @@ class Service {
             
             do {
                 guard let resultArray = try JSONSerialization.jsonObject(with: data, options: []) as? [AnyObject] else { return }
-                print(resultArray)
+                
+                for (key, result) in resultArray.enumerated() {
+                    if let dictionary = result as? [String: AnyObject] {
+                        let pokemon = CollectionModel(id: key, dictionary: dictionary)
+                        print(pokemon.name)
+                    }
+                }
                 
             } catch let error {
                 print("failed to create json with error:", error.localizedDescription)

@@ -14,13 +14,14 @@ class MyCollectionViewController: UICollectionViewController {
     // MARK: - Properties
     
     
+    
+    
     // MARK: - Init
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         fetchCollection()
-       
     }
     
     // MARK: - Selectors

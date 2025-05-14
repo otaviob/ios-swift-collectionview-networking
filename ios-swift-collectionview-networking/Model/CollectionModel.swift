@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FileModel {
+class CollectionModel {
         
     var name: String?
     var imageUrl: String?
