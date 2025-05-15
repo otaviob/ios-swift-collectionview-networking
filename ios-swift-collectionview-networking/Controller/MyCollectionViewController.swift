@@ -13,8 +13,7 @@ class MyCollectionViewController: UICollectionViewController {
     
     // MARK: - Properties
     
-    
-    
+    var collection = [MyCollectionModel]()
     
     // MARK: - Init
 
@@ -34,9 +33,14 @@ class MyCollectionViewController: UICollectionViewController {
     // MARK: - API
     
     func fetchCollection() {
-        Service.shared.fetchCollection()
+        Service.shared.fetchCollection { (collection) in
+            DispatchQueue.main.sync {
+                self.collection = collection
+                self.collectionView.reloadData()
+            }
+            
+        }
     }
-    
     
     // MARK: - Helper Functions
     
@@ -68,7 +72,7 @@ class MyCollectionViewController: UICollectionViewController {
 
 extension MyCollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return collection.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -77,8 +81,6 @@ extension MyCollectionViewController {
         return cell
     }
 }
-
-
 
 extension MyCollectionViewController: UICollectionViewDelegateFlowLayout {
     

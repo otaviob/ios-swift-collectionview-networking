@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CollectionModel {
+class MyCollectionModel {
         
     var name: String?
     var imageUrl: String?

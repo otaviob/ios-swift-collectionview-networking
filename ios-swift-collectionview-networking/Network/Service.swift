@@ -12,7 +12,8 @@ class Service {
     static let shared = Service()
     let BASE_URL = "https://pokedex-bb36f.firebaseio.com/pokemon.json"
     
-    func fetchCollection() {
+    func fetchCollection(completion: @escaping ([MyCollectionModel]) -> ()) {
+        var collectionArray = [MyCollectionModel]()
         
         guard let url = URL(string: BASE_URL) else { return }
         
@@ -31,9 +32,11 @@ class Service {
                 
                 for (key, result) in resultArray.enumerated() {
                     if let dictionary = result as? [String: AnyObject] {
-                        let pokemon = CollectionModel(id: key, dictionary: dictionary)
-                        print(pokemon.name)
+                        let collection = MyCollectionModel(id: key, dictionary: dictionary)
+                        collectionArray.append(collection)
                     }
+                    
+                    completion(collectionArray)
                 }
                 
             } catch let error {
@@ -43,4 +46,7 @@ class Service {
     }
 }
     
+
+
+
 
