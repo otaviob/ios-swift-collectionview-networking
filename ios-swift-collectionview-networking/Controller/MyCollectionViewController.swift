@@ -57,7 +57,6 @@ class MyCollectionViewController: UICollectionViewController {
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
         navigationController?.navigationBar.isTranslucent = false
-        
 
         // [Button] - Search
         navigationItem.rightBarButtonItem = UIBarButtonItem(
@@ -65,7 +64,6 @@ class MyCollectionViewController: UICollectionViewController {
                 target: self,
                 action: #selector(searchTapped)
         )
-        
         collectionView.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
 }
@@ -77,7 +75,7 @@ extension MyCollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MyCollectionViewCell
-        cell.backgroundColor = .systemPink
+        cell.collection = collection[indexPath.item]
         return cell
     }
 }
