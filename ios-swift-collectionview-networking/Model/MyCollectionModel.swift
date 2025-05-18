@@ -22,6 +22,8 @@ class MyCollectionModel {
     var baseExperience: Int?
     
     init (id: Int, dictionary: [String: AnyObject]) {
+            self.id = id
+
         
         if let name = dictionary["name"] as? String {
             self.name = name

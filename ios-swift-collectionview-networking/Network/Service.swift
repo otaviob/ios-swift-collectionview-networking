@@ -9,6 +9,8 @@ import UIKit
 
 class Service {
     
+    
+    
     static let shared = Service()
     let BASE_URL = "https://pokedex-bb36f.firebaseio.com/pokemon.json"
     
@@ -38,6 +40,12 @@ class Service {
                         self.fetchImage(withUrlString: imageUrl, completion: { (image) in
                                 collection.image = image
                                 collectionArray.append(collection)
+                            
+                            collectionArray.sort(by: { (collection1, collection2) -> Bool in
+                                return collection1.id! < collection2.id!
+
+                            })
+                            
                                 completion(collectionArray)
                         })
                     }

@@ -38,7 +38,6 @@ class MyCollectionViewController: UICollectionViewController {
                 self.collection = collection
                 self.collectionView.reloadData()
             }
-            
         }
     }
     
@@ -62,8 +61,8 @@ class MyCollectionViewController: UICollectionViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(
                 barButtonSystemItem: .search,
                 target: self,
-                action: #selector(searchTapped)
-        )
+                action: #selector(searchTapped))
+        
         collectionView.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
 }
