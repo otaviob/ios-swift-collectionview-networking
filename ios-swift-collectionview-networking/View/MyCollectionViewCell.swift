@@ -58,13 +58,13 @@ class MyCollectionViewCell: UICollectionViewCell {
     
     @objc func handleLongPress(sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
-            print("clickbank")
+            print("Long press did begin..")
+        } else if sender.state == .ended {
+            print("Long press did end..")
         }
         
     }
-    
-    
-    
+
     // MARK: - Helper Functions
     
     func configureViewComponents() {

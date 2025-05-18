@@ -20,6 +20,7 @@
 		E0CC35E12DCCF3CC0063BFCE /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CC35E02DCCF3CC0063BFCE /* MyCollectionViewCell.swift */; };
 		E0ECD5662DD2157100E90F54 /* MyCollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ECD5652DD2157100E90F54 /* MyCollectionModel.swift */; };
 		E0ECD5682DD21C7A00E90F54 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0ECD5672DD21C7A00E90F54 /* Service.swift */; };
+		E0EECDFC2DD9AF6C00D51B73 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EECDFB2DD9AF6C00D51B73 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E0CC35E02DCCF3CC0063BFCE /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		E0ECD5652DD2157100E90F54 /* MyCollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionModel.swift; sourceTree = "<group>"; };
 		E0ECD5672DD21C7A00E90F54 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		E0EECDFB2DD9AF6C00D51B73 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				E0CC35E02DCCF3CC0063BFCE /* MyCollectionViewCell.swift */,
+				E0EECDFB2DD9AF6C00D51B73 /* InfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				E0CC35E12DCCF3CC0063BFCE /* MyCollectionViewCell.swift in Sources */,
 				E038E40C2DCCC39D00863CF4 /* MyCollectionViewController.swift in Sources */,
 				E038E4082DCCC39D00863CF4 /* AppDelegate.swift in Sources */,
+				E0EECDFC2DD9AF6C00D51B73 /* InfoView.swift in Sources */,
 				E038E40A2DCCC39D00863CF4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
