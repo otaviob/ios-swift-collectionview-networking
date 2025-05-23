@@ -7,14 +7,41 @@
 
 import UIKit
 
+protocol InfoViewDelegate {
+    func dismissInfoView(withCollection collection: MyCollectionModel?)
+}
+
 class InfoView: UIView {
     
     // MARK: - Properties
     
+    var delegate: InfoViewDelegate?
+    
+    var collection: MyCollectionModel? {
+        didSet {
+            guard let collection = self.collection else { return }
+            guard let type = collection.type else { return }
+            guard let defense = collection.defense else { return }
+            guard let attack = collection.attack else { return }
+            guard let id = collection.id else { return }
+            guard let height = collection.height else { return }
+            guard let weight = collection.weight else { return }
+            
+            imageView.image = collection.image
+            nameLabel.text = collection.name
+            
+            configureLabel(label: typeLabel, title: "Type", details: type)
+            configureLabel(label: defenseLabel, title: "Defense", details: "\(defense)")
+            configureLabel(label: heightLabel, title: "Height", details: "\(height)")
+            configureLabel(label: weightLabel, title: "Weight", details: "\(weight)")
+            configureLabel(label: pokedexIdLabel, title: "Pokedex Id", details: "\(id)")
+            configureLabel(label: attackLabel, title: "Base Attack", details: "\(attack)")
+        }
+    }
+    
     let imageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
-        iv.backgroundColor = .lightGray
         return iv
     }()
     
@@ -67,7 +94,7 @@ class InfoView: UIView {
     
     let weightLabel: UILabel = {
         let label = UILabel()
-        label.text = "TEST001"
+        label.text = "TEST001"  
         return label
     }()
     
@@ -97,10 +124,17 @@ class InfoView: UIView {
     // MARK: - Selectors
     
     @objc func handleViewMoreInfo() {
-        print("handle view more info..")
+        guard let collection = self.collection else { return }
+        delegate?.dismissInfoView(withCollection: collection)
     }
     
     // MARK: - Helper Functions
+    
+    func configureLabel(label: UILabel, title: String, details: String) {
+        let attributedText = NSMutableAttributedString(attributedString: NSAttributedString(string: "\(title):  ", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.mainPink()]))
+        attributedText.append(NSAttributedString(string: "\(details)", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.gray]))
+        label.attributedText = attributedText
+    }
     
     func configureViewComponents() {
         backgroundColor = .white
@@ -121,7 +155,7 @@ class InfoView: UIView {
         defenseLabel.anchor(top: imageView.bottomAnchor, left: nil, bottom: nil, right: rightAnchor, paddingTop: 16, paddingLeft: 0, paddingBottom: 0, paddingRight: 8, width: 0, height: 0)
         
         let separatorView = UIView()
-        separatorView.backgroundColor = .groupTableViewBackground
+        separatorView.backgroundColor = .secondarySystemBackground
         addSubview(separatorView)
         separatorView.anchor(top: typeLabel.bottomAnchor, left: leftAnchor, bottom: nil, right: rightAnchor, paddingTop: 8, paddingLeft: 4, paddingBottom: 0, paddingRight: 4, width: 0, height: 1)
         

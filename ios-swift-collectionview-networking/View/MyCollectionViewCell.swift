@@ -7,10 +7,20 @@
 
 import UIKit
 
+protocol MyCollectionCellDelegate {
+    func presentInfoView(withCollection collection: MyCollectionModel)
+}
+
 class MyCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Properties
     
+    
+    /// delegate
+    var delegate: MyCollectionCellDelegate?
+    
+    
+    /// set collection
     var collection: MyCollectionModel? {
         didSet {
             nameLabel.text = collection?.name
@@ -18,6 +28,7 @@ class MyCollectionViewCell: UICollectionViewCell {
         }
     }
   
+    /// UI
     let imageView: UIImageView = {
         let iv = UIImageView()
         iv.backgroundColor = .secondarySystemBackground
@@ -58,9 +69,8 @@ class MyCollectionViewCell: UICollectionViewCell {
     
     @objc func handleLongPress(sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
-            print("Long press did begin..")
-        } else if sender.state == .ended {
-            print("Long press did end..")
+            guard let collection = self.collection else { return }
+            delegate?.presentInfoView(withCollection: collection)
         }
         
     }

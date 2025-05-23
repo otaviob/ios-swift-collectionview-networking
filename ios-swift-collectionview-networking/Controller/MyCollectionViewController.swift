@@ -21,11 +21,17 @@ class MyCollectionViewController: UICollectionViewController {
         return view
     }()
     
+    let visualEffectView: UIVisualEffectView = {
+        let blurEffect = UIBlurEffect(style: .dark)
+        let view = UIVisualEffectView(effect: blurEffect)
+        return view
+    }()
+    
     // MARK: - Init
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
+        configureViewComponents()
         fetchCollection()
     }
     
@@ -34,6 +40,10 @@ class MyCollectionViewController: UICollectionViewController {
     // [Action] - Tap Search
     @objc func searchTapped() {
         print("Works")
+    }
+    
+    @objc func handleDismissal() {
+        dismissInfoView(colletion: nil)
     }
     
     // MARK: - API
@@ -49,7 +59,17 @@ class MyCollectionViewController: UICollectionViewController {
     
     // MARK: - Helper Functions
     
-    private func setupView() {
+    func dismissInfoView(colletion: MyCollectionModel?) {
+        UIView.animate(withDuration: 0.5, animations: {
+            self.visualEffectView.alpha = 0
+            self.infoView.alpha = 0
+            self.infoView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        }) { (_) in
+            self.infoView.removeFromSuperview()
+        }
+    }
+    
+    private func configureViewComponents() {
         title = "My Collection"
 
         // [Style] - Navigation bar
@@ -71,10 +91,14 @@ class MyCollectionViewController: UICollectionViewController {
         
         collectionView.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         
-        view.addSubview(infoView)
-        infoView.anchor(top: nil, left: nil, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: view.frame.width - 64, height: 500)
-        infoView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        infoView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -44).isActive = true
+        view.addSubview(visualEffectView)
+        visualEffectView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
+        visualEffectView.alpha = 0
+        
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(handleDismissal))
+        visualEffectView.addGestureRecognizer(gesture)
+        
+        
     }
 }
 
@@ -86,6 +110,7 @@ extension MyCollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MyCollectionViewCell
         cell.collection = collection[indexPath.item]
+        cell.delegate = self
         return cell
     }
 }
@@ -103,5 +128,32 @@ extension MyCollectionViewController: UICollectionViewDelegateFlowLayout {
             
         }
     }
+
+extension MyCollectionViewController: MyCollectionCellDelegate {
+    func presentInfoView(withCollection collection: MyCollectionModel) {
+        view.addSubview(infoView)
+        infoView.delegate = self
+        infoView.collection = collection
+        infoView.anchor(top: nil, left: nil, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: view.frame.width - 64, height: 500)
+        infoView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        infoView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -44).isActive = true
+        
+        infoView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        infoView.alpha = 0
+        
+        UIView.animate(withDuration: 0.5) {
+            self.visualEffectView.alpha = 1
+            self.infoView.alpha = 1
+            self.infoView.transform = .identity
+        }
+    }
+}
+
+extension MyCollectionViewController: InfoViewDelegate {
+    func dismissInfoView(withCollection collection: MyCollectionModel?) {
+        dismissInfoView(colletion: collection)
+        
+    }
+}
     
     

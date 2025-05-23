@@ -26,7 +26,7 @@ class MyCollectionModel {
 
         
         if let name = dictionary["name"] as? String {
-            self.name = name
+            self.name = name.capitalized
         }
         
         if let imageUrl = dictionary["imageUrl"] as? String {

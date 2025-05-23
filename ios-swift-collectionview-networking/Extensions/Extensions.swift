@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+/// setup color
 extension UIColor {
     
     static func rgb(red: CGFloat,   green: CGFloat, blue: CGFloat) -> UIColor {
@@ -17,7 +19,9 @@ extension UIColor {
         return UIColor.rgb(red: 221, green: 94, blue: 86)
     }
 }
-    
+
+
+/// setup view
 extension UIView {
          
         func center(inView view: UIView) {
