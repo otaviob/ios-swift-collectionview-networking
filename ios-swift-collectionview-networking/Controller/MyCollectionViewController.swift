@@ -14,6 +14,7 @@ class MyCollectionViewController: UICollectionViewController {
     // MARK: - Properties
     
     var collection = [MyCollectionModel]()
+    var searchBar: UISearchBar!
     
     let infoView: InfoView = {
         let view = InfoView()
@@ -58,6 +59,17 @@ class MyCollectionViewController: UICollectionViewController {
     }
     
     // MARK: - Helper Functions
+    
+    func configureSearchBar() {
+        searchBar = UISearchBar()
+        searchBar.sizeToFit()
+        searchBar.showsCancelButton = true
+        searchBar.becomeFirstResponder()
+        searchBar.tintColor = .white
+        
+        navigationItem.rightBarButtonItem = nil
+        navigationItem.titleView = searchBar
+    }
     
     func dismissInfoView(colletion: MyCollectionModel?) {
         UIView.animate(withDuration: 0.5, animations: {
